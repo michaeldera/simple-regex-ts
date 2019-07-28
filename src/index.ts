@@ -1,3 +1,4 @@
+/** Common Zimbabwean Regex patterns */
 export const SimpleRegex = {
   EmailAddress: RegExp('^[a-zA-Z0-9.!#$%&’+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)$'),
   MobileNumber: {
