@@ -6,5 +6,6 @@ export const SimpleRegex = {
     Telecel: RegExp(/^(((\+)*263)|0)73[0-9]{7}$/gm),
   },
   NationalID: RegExp(/^[0-9]{2}(-|s)[0-9]{6}s*[A-Z]s*[0-9]{2}$/gm),
+  NumberPlate: RegExp(/^[A-Z]{3}(-|[[:blank:]])[0-9]{3}$/gm),
   PassportNumber: RegExp(/^[A-Z]{2}[0-9]{6}$/gm),
 };
