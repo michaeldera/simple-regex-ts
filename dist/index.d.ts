@@ -1,3 +1,4 @@
+/** Common Zimbabwean Regex patterns */
 export declare const SimpleRegex: {
     EmailAddress: RegExp;
     MobileNumber: {
@@ -6,5 +7,6 @@ export declare const SimpleRegex: {
         Telecel: RegExp;
     };
     NationalID: RegExp;
+    NumberPlate: RegExp;
     PassportNumber: RegExp;
 };
