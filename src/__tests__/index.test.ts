@@ -1,19 +1,19 @@
-import { SimpleRegex } from '../index'
+import { SimpleRegex } from '../index';
 
 const TestVariables = {
-  EconetNumber1: "0770000000", 
-  LongEconetNumber: "07700000000",  
-  LongNetoneNumber: "07100000000",
-  LongTelecelNumber: "07300000000",  
-  MockIDNumber: "00-000000A00",
-  MockNumberPlate: "AAA-000",  
-  MockPassportNumber : "AA000000",  
-  NetoneNumber1: "0710000000",
-  ShortEconetNumber: "077000000",
-  ShortNetoneNumber: "071000000",
-  ShortTelecelNumber: "073000000",
-  TelecelNumber1: "0730000000", 
-}
+  EconetNumber1: '0770000000',
+  LongEconetNumber: '07700000000',
+  LongNetoneNumber: '07100000000',
+  LongTelecelNumber: '07300000000',
+  MockIDNumber: '00-000000A00',
+  MockNumberPlate: 'AAA-000',
+  MockPassportNumber: 'AA000000',
+  NetoneNumber1: '0710000000',
+  ShortEconetNumber: '077000000',
+  ShortNetoneNumber: '071000000',
+  ShortTelecelNumber: '073000000',
+  TelecelNumber1: '0730000000',
+};
 
 test('Validate Econet Number', () => {
   expect(SimpleRegex.MobileNumber.Econet.test(TestVariables.EconetNumber1)).toBe(true);
@@ -71,6 +71,6 @@ test('Long Netone Number', () => {
   expect(SimpleRegex.MobileNumber.Telecel.test(TestVariables.LongNetoneNumber)).toBe(false);
 });
 
-test('Valid Number Plate', () =>{
+test('Valid Number Plate', () => {
   expect(SimpleRegex.NumberPlate.test(TestVariables.MockNumberPlate)).toBe(true);
 });
