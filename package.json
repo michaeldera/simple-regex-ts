@@ -4,6 +4,7 @@
   "description": "��#\u0000 \u0000S\u0000i\u0000m\u0000p\u0000l\u0000e\u0000 \u0000R\u0000e\u0000g\u0000e\u0000x\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,7 +13,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/michaeldera/simple-regex/issues"
   },
