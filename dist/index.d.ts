@@ -2,9 +2,9 @@ export declare const SimpleRegex: {
     EmailAddress: RegExp;
     MobileNumber: {
         Econet: RegExp;
-        Telecel: RegExp;
         Netone: RegExp;
+        Telecel: RegExp;
     };
-    PassportNumber: RegExp;
     NationalID: RegExp;
+    PassportNumber: RegExp;
 };
