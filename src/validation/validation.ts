@@ -1,1 +1,1 @@
-import { SimpleRegex } from "..";
+import { SimpleRegex } from '..';
