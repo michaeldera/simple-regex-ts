@@ -36,15 +36,15 @@ test('Validate National ID Number', () => {
 });
 
 test('Invalid Econet Number', () => {
-  expect(SimpleRegex.MobileNumber.Econet.test(TestVariables.TelecelNumber1)).toBe(true);
+  expect(SimpleRegex.MobileNumber.Econet.test(TestVariables.TelecelNumber1)).toBe(false);
 });
 
 test('Invalid Netone Number', () => {
-  expect(SimpleRegex.MobileNumber.Netone.test(TestVariables.TelecelNumber1)).toBe(true);
+  expect(SimpleRegex.MobileNumber.Netone.test(TestVariables.TelecelNumber1)).toBe(false);
 });
 
 test('Invalid Telecel Number', () => {
-  expect(SimpleRegex.MobileNumber.Telecel.test(TestVariables.EconetNumber1)).toBe(true);
+  expect(SimpleRegex.MobileNumber.Telecel.test(TestVariables.EconetNumber1)).toBe(false);
 });
 
 test('Too Long Telecel Number', () => {
