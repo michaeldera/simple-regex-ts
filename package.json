@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/michaeldera/simple-regex#readme",
   "devDependencies": {
+    "prettier": "^1.18.2",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.5.3"
   }
 }
