@@ -13,21 +13,21 @@ export const SimpleRegex = {
   /**
    * Provides regular expression for email addresses
    */
-  EmailAddress: EmailAddress,
+  EmailAddress,
   /**
    * Regular expressions for mobile phone network operators in Zimbabwe.
    */
-  MobileNumber: MobileNumber,
+  MobileNumber,
   /**
   * Regular expression for National Identity Numbers in Zimbabwe
   */
-  NationalID: NationalID,
+  NationalID,
   /**
   * Regular expression for ordinary motor vehicle licence plate numbers in Zimbabwe.
   */
-  NumberPlate: NumberPlate,
+  NumberPlate,
     /**
   * Regular expression passport numbers in Zimbabwe.
   */ 
-  PassportNumber: PassportNumber
+  PassportNumber
 }
