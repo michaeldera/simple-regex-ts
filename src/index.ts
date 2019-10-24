@@ -19,15 +19,15 @@ export const SimpleRegex = {
    */
   MobileNumber,
   /**
-  * Regular expression for National Identity Numbers in Zimbabwe
-  */
+   * Regular expression for National Identity Numbers in Zimbabwe
+   */
   NationalID,
   /**
-  * Regular expression for ordinary motor vehicle licence plate numbers in Zimbabwe.
-  */
+   * Regular expression for ordinary motor vehicle licence plate numbers in Zimbabwe.
+   */
   NumberPlate,
-    /**
-  * Regular expression passport numbers in Zimbabwe.
-  */ 
+  /**
+   * Regular expression passport numbers in Zimbabwe.
+   */ 
   PassportNumber
 }
