@@ -4,7 +4,9 @@ A simple package with common regex pattens for Zimbabwe
 
 ## Links
 [Simple Regex Documentation](https://simple-regex.netlify.com/)
+
 [Github Repository](https://github.com/michaeldera/simple-regex)
+
 [NPM Package](https://www.npmjs.com/package/simple-regex)
 
 ## Installation 
