@@ -21,15 +21,15 @@ export declare const SimpleRegex: {
         Telecel: RegExp;
     };
     /**
-    * Regular expression for National Identity Numbers in Zimbabwe
-    */
+     * Regular expression for National Identity Numbers in Zimbabwe
+     */
     NationalID: RegExp;
     /**
-    * Regular expression for ordinary motor vehicle licence plate numbers in Zimbabwe.
-    */
+     * Regular expression for ordinary motor vehicle licence plate numbers in Zimbabwe.
+     */
     NumberPlate: RegExp;
     /**
-  * Regular expression passport numbers in Zimbabwe.
-  */
+     * Regular expression passport numbers in Zimbabwe.
+     */
     PassportNumber: RegExp;
 };

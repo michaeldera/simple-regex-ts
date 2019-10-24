@@ -19,15 +19,15 @@ exports.SimpleRegex = {
      */
     MobileNumber: exports.MobileNumber,
     /**
-    * Regular expression for National Identity Numbers in Zimbabwe
-    */
+     * Regular expression for National Identity Numbers in Zimbabwe
+     */
     NationalID: exports.NationalID,
     /**
-    * Regular expression for ordinary motor vehicle licence plate numbers in Zimbabwe.
-    */
+     * Regular expression for ordinary motor vehicle licence plate numbers in Zimbabwe.
+     */
     NumberPlate: exports.NumberPlate,
     /**
-  * Regular expression passport numbers in Zimbabwe.
-  */
+     * Regular expression passport numbers in Zimbabwe.
+     */
     PassportNumber: exports.PassportNumber
 };
