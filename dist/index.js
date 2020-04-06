@@ -9,7 +9,12 @@ exports.MobileNumber = {
 exports.NationalID = RegExp(/^[0-9]{2}(-|s)[0-9]{6,7}s*[A-Z]s*[0-9]{2}$/gm);
 exports.NumberPlate = RegExp(/^[A-Z]{3}(-|[[:blank:]])[0-9]{3}$/gm);
 exports.PassportNumber = RegExp(/^[A-Z]{2}[0-9]{6}$/gm);
+exports.DriversLicence = RegExp(/^\b\d{5}[a-zA-Z]{2}\b/gm);
 exports.SimpleRegex = {
+    /**
+     * Provides regular expression for Drivers' Licences in Zimbabwe
+     */
+    DriversLicence: exports.DriversLicence,
     /**
      * Provides regular expression for email addresses
      */

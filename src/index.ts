@@ -10,9 +10,10 @@ export const  PassportNumber = RegExp(/^[A-Z]{2}[0-9]{6}$/gm);
 export const  DriversLicence = RegExp(/^\b\d{5}[a-zA-Z]{2}\b/gm);
 
 
-export const SimpleRegex = {  /**
-  * Provides regular expression for Drivers' Licences in Zimbabwe
-  */
+export const SimpleRegex = {  
+  /**
+   * Provides regular expression for Drivers' Licences in Zimbabwe
+   */
   DriversLicence,
   /**
    * Provides regular expression for email addresses

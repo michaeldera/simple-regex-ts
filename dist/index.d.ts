@@ -7,7 +7,12 @@ export declare const MobileNumber: {
 export declare const NationalID: RegExp;
 export declare const NumberPlate: RegExp;
 export declare const PassportNumber: RegExp;
+export declare const DriversLicence: RegExp;
 export declare const SimpleRegex: {
+    /**
+     * Provides regular expression for Drivers' Licences in Zimbabwe
+     */
+    DriversLicence: RegExp;
     /**
      * Provides regular expression for email addresses
      */
