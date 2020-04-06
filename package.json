@@ -10,7 +10,7 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
-    "docs": "typedoc --out docs \".\/src\"",
+    "docs": "typedoc --out docs \"./src\"",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
@@ -32,13 +32,13 @@
   },
   "homepage": "https://github.com/michaeldera/simple-regex#readme",
   "devDependencies": {
-    "@types/jest": "^24.0.15",
+    "@types/jest": "^24.9.1",
     "jest": "^24.8.0",
-    "prettier": "^1.18.2",
-    "ts-jest": "^24.0.2",
-    "tslint": "^5.18.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.3.0",
+    "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.5.3",
-    "typedoc": "^0.15.0"
+    "typedoc": "^0.15.8",
+    "typescript": "^3.8.3"
   }
 }
