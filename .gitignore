@@ -4,5 +4,5 @@ node_modules
 
 
 # ignore build folder
-dist/
-docs/
+dist
+docs
