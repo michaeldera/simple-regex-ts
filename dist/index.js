@@ -34,5 +34,5 @@ exports.SimpleRegex = {
     /**
      * Regular expression passport numbers in Zimbabwe.
      */
-    PassportNumber: exports.PassportNumber
+    PassportNumber: exports.PassportNumber,
 };
