@@ -16,7 +16,7 @@ const TestVariables = {
   MockDriversLicense: '00000AA',
   InvalidDriversLicense1: '00000AAA',
   InvalidDriversLicense2: '000000AA',
-  ShortDriversLicense: '000000A'
+  ShortDriversLicense: '000000A',
 };
 
 test('Validate Econet Number', () => {
@@ -79,14 +79,17 @@ test('Valid Number Plate', () => {
   expect(SimpleRegex.NumberPlate.test(TestVariables.MockNumberPlate)).toBe(true);
 });
 
-test('Valid Driver\'s Licence', () => {
+test("Valid Driver's Licence", () => {
   expect(SimpleRegex.DriversLicence.test(TestVariables.MockDriversLicense)).toBe(true);
 });
 
-test('Invalid Driver\'s License', () => {
-  expect(SimpleRegex.DriversLicence.test(TestVariables.InvalidDriversLicense1) && SimpleRegex.DriversLicence.test(TestVariables.InvalidDriversLicense2)).toBe(false);
-})
+test("Invalid Driver's License", () => {
+  expect(
+    SimpleRegex.DriversLicence.test(TestVariables.InvalidDriversLicense1) &&
+      SimpleRegex.DriversLicence.test(TestVariables.InvalidDriversLicense2),
+  ).toBe(false);
+});
 
-test('Invalid Short Driver\'s License', () => {
+test("Invalid Short Driver's License", () => {
   expect(SimpleRegex.DriversLicence.test(TestVariables.ShortDriversLicense)).toBe(false);
-})
+});
