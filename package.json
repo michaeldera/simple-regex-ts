@@ -1,6 +1,6 @@
 {
   "name": "@michaeldera/simple-regex",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A simple library with common Zimbabwean regex patterns",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -35,7 +35,7 @@
     "@types/jest": "^24.9.1",
     "jest": "^24.8.0",
     "prettier": "^1.19.1",
-    "ts-jest": "^24.3.0",
+    "ts-jest": "^25.4.0",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "typedoc": "^0.15.8",
