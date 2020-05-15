@@ -2,21 +2,25 @@ import { SimpleRegex } from '../index';
 
 const TestVariables = {
   EconetNumber1: '0770000000',
+  InvalidDriversLicense1: '00000AAA',
+  InvalidDriversLicense2: '000000AA',
+  InvalidSSN: 'A0000000',
   LongEconetNumber: '07700000000',
   LongNetoneNumber: '07100000000',
+  LongSSN: '00000000A',
   LongTelecelNumber: '07300000000',
+  MockDriversLicense: '00000AA',
   MockIDNumber: '00-000000A00',
   MockNumberPlate: 'AAA-000',
   MockPassportNumber: 'AA000000',
+  MockSSN: '0000000A',
   NetoneNumber1: '0710000000',
+  ShortDriversLicense: '000000A',
   ShortEconetNumber: '077000000',
   ShortNetoneNumber: '071000000',
+  ShortSSN: '00000A',
   ShortTelecelNumber: '073000000',
   TelecelNumber1: '0730000000',
-  MockDriversLicense: '00000AA',
-  InvalidDriversLicense1: '00000AAA',
-  InvalidDriversLicense2: '000000AA',
-  ShortDriversLicense: '000000A',
 };
 
 test('Validate Econet Number', () => {
@@ -92,4 +96,20 @@ test("Invalid Driver's License", () => {
 
 test("Invalid Short Driver's License", () => {
   expect(SimpleRegex.DriversLicence.test(TestVariables.ShortDriversLicense)).toBe(false);
+});
+
+test("Valid SSN", () => {
+  expect(SimpleRegex.SSN.test(TestVariables.MockSSN)).toBe(true);
+});
+
+test("Invalid Short SSN", () => {
+  expect(SimpleRegex.SSN.test(TestVariables.ShortSSN)).toBe(false);
+});
+
+test("Invalid Long SSN", () => {
+  expect(SimpleRegex.SSN.test(TestVariables.LongSSN)).toBe(false);
+});
+
+test("Invalid SSN", () => {
+  expect(SimpleRegex.SSN.test(TestVariables.InvalidSSN)).toBe(false);
 });

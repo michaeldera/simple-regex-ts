@@ -8,6 +8,7 @@ export const NationalID = RegExp(/^[0-9]{2}(-|s)[0-9]{6,7}s*[A-Z]s*[0-9]{2}$/gm)
 export const NumberPlate = RegExp(/^[A-Z]{3}(-|[[:blank:]])[0-9]{3}$/gm);
 export const PassportNumber = RegExp(/^[A-Z]{2}[0-9]{6}$/gm);
 export const DriversLicence = RegExp(/^\b\d{5}[a-zA-Z]{2}\b/gm);
+export const SSN = RegExp(/^\b([0-9]){7}([a-zA-Z]){1}\b/gm);
 
 export const SimpleRegex = {
   /**
@@ -33,6 +34,9 @@ export const SimpleRegex = {
   /**
    * Regular expression passport numbers in Zimbabwe.
    */
-
   PassportNumber,
+  /**
+   * Regular expression for social security number by National Social Security Authority of Zimbabwe.
+   */
+  SSN,
 };
