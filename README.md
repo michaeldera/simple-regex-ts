@@ -39,3 +39,5 @@ You can also inject the Regex Pattern into HTML form fields. An example of this 
 `SimpleRegex.EmailAddress` Pattern for Email Addresses
 
 `SimpleRegex.DriversLicence` Pattern for Zimbabwean Driver's Licences
+
+`SimpleRegex.SSN` Pattern for Zimbabwean Social Security Number (NSSA)
