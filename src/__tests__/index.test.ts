@@ -1,4 +1,4 @@
-import { SimpleRegex } from '../index';
+import { SimpleRegex, MobileNumber } from '../index';
 
 const TestVariables = {
   EconetNumber1: '0770000000',
@@ -113,3 +113,11 @@ test("Invalid Long SSN", () => {
 test("Invalid SSN", () => {
   expect(SimpleRegex.SSN.test(TestVariables.InvalidSSN)).toBe(false);
 });
+
+test("Can test for valid mobile numbers", () => {
+  expect(MobileNumber.test(TestVariables.EconetNumber1) && MobileNumber.test(TestVariables.NetoneNumber1) && MobileNumber.test(TestVariables.TelecelNumber1)).toBe(true);
+});
+
+test("Can test for invalid mobile number", () => {
+  expect(!MobileNumber.test(TestVariables.LongEconetNumber) && !MobileNumber.test(TestVariables.LongNetoneNumber) && !MobileNumber.test(TestVariables.LongTelecelNumber)).toBe(true);
+})
