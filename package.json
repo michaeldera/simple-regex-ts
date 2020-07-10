@@ -23,7 +23,8 @@
   "keywords": [
     "Regex",
     "Zimbabwe",
-    "Validation"
+    "Validation",
+    "SimpleRegex"
   ],
   "author": "Michael Dera",
   "license": "MIT",
