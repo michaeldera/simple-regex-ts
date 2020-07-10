@@ -21,6 +21,8 @@ To test a variable against a Regex expression:
 You can also inject the Regex Pattern into HTML form fields. An example of this pattern in ReactJS 
 `<input type="text" name="number_plate" pattern={SimpleRegex.NumberPlate} title="Zimbabwean Number Plate">`
 
+### Global Flag
+Starting from version 2.0.0-alpha the package no longer has the global flag set by default. See [an issue about it here](https://github.com/michaeldera/simple-regex-ts/issues/8) 
 
 ### Available Patterns
 
