@@ -38,7 +38,6 @@ test('Validate Telecel Number', () => {
   expect(SimpleRegex.MobileNumber.Telecel.test(TestVariables.TelecelNumber1)).toBe(true);
 });
 
-//
 test('Validate Non Zero Econet Number', () => {
   expect(SimpleRegex.MobileNumber.Econet.test(TestVariables.NonZeroEconetNumber)).toBe(true);
 });
@@ -50,7 +49,6 @@ test('Validate Non Zero Netone Number', () => {
 test('Validate Non Zero Telecel Number', () => {
   expect(SimpleRegex.MobileNumber.Telecel.test(TestVariables.NonZeroTelecelNumber)).toBe(true);
 });
-//
 
 test('Validate Passport Number', () => {
   expect(SimpleRegex.PassportNumber.test(TestVariables.MockPassportNumber)).toBe(true);
