@@ -2,16 +2,19 @@
  * Provides a way to test if a number is in one of the valid mobile number patterns
  */
 const TestMobileNumber = (mobileNumber: string): boolean => {
-  const isValidMobileNumber: boolean = MobileNumber.Econet.test(mobileNumber) || MobileNumber.Telecel.test(mobileNumber) || MobileNumber.Netone.test(mobileNumber);
-  return isValidMobileNumber;  
-}
+  const isValidMobileNumber: boolean =
+    MobileNumber.Econet.test(mobileNumber) ||
+    MobileNumber.Telecel.test(mobileNumber) ||
+    MobileNumber.Netone.test(mobileNumber);
+  return isValidMobileNumber;
+};
 
 export const EmailAddress = RegExp('^[a-zA-Z0-9.!#$%&’+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)$');
 export const MobileNumber = {
-  Econet: RegExp(/^(((\+)*263)|0)7(7|8)[0-9]{7}$/),
-  Netone: RegExp(/^(((\+)*263)|0)71[0-9]{7}$/),
-  Telecel: RegExp(/^(((\+)*263)|0)73[0-9]{7}$/),
-  test: TestMobileNumber
+  Econet: RegExp(/^(((\+)*2637)|07|7)(7|8)[0-9]{7}$/),
+  Netone: RegExp(/^(((\+)*2637)|07|7)1[0-9]{7}$/),
+  Telecel: RegExp(/^(((\+)*2637)|07|7)3[0-9]{7}$/),
+  test: TestMobileNumber,
 };
 export const NationalID = RegExp(/^[0-9]{2}(-|s)[0-9]{6,7}s*[A-Z]s*[0-9]{2}$/);
 export const NumberPlate = RegExp(/^[A-Z]{3}(-|[[:blank:]])[0-9]{3}$/gm);
