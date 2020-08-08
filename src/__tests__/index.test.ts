@@ -21,6 +21,9 @@ const TestVariables = {
   ShortSSN: '00000A',
   ShortTelecelNumber: '073000000',
   TelecelNumber1: '0730000000',
+  NonZeroTelecelNumber: '730000000',
+  NonZeroEconetNumber: '770000000',
+  NonZeroNetoneNumber: '710000000',
 };
 
 test('Validate Econet Number', () => {
@@ -34,6 +37,20 @@ test('Validate Netone Number', () => {
 test('Validate Telecel Number', () => {
   expect(SimpleRegex.MobileNumber.Telecel.test(TestVariables.TelecelNumber1)).toBe(true);
 });
+
+//
+test('Validate Non Zero Econet Number', () => {
+  expect(SimpleRegex.MobileNumber.Econet.test(TestVariables.NonZeroEconetNumber)).toBe(true);
+});
+
+test('Validate Non Zero Netone Number', () => {
+  expect(SimpleRegex.MobileNumber.Netone.test(TestVariables.NonZeroNetoneNumber)).toBe(true);
+});
+
+test('Validate Non Zero Telecel Number', () => {
+  expect(SimpleRegex.MobileNumber.Telecel.test(TestVariables.NonZeroTelecelNumber)).toBe(true);
+});
+//
 
 test('Validate Passport Number', () => {
   expect(SimpleRegex.PassportNumber.test(TestVariables.MockPassportNumber)).toBe(true);
