@@ -21,34 +21,40 @@ export const NumberPlate = RegExp(/^[A-Z]{3}(-|[[:blank:]])[0-9]{3}$/gm);
 export const PassportNumber = RegExp(/^[A-Z]{2}[0-9]{6}$/);
 export const DriversLicence = RegExp(/^\b\d{5}[a-zA-Z]{2}\b/);
 export const SSN = RegExp(/^\b([0-9]){7}([a-zA-Z]){1}\b/);
+export const DomainName = RegExp(/^(?!:\/\/)([a-zA-Z0-9-_]+\.)*[a-zA-Z0-9][a-zA-Z0-9-_]+(\.co\.zw|\.ac\.zw|\.org\.zw)$/)
 
 export const SimpleRegex = {
-  /**
-   * Provides regular expression for Drivers' Licences in Zimbabwe
-   */
-  DriversLicence,
-  /**
-   * Provides regular expression for email addresses
-   */
-  EmailAddress,
-  /**
-   * Regular expressions for mobile phone network operators in Zimbabwe.
-   */
-  MobileNumber,
-  /**
-   * Regular expression for National Identity Numbers in Zimbabwe
-   */
-  NationalID,
-  /**
-   * Regular expression for ordinary motor vehicle licence plate numbers in Zimbabwe.
-   */
-  NumberPlate,
-  /**
-   * Regular expression passport numbers in Zimbabwe.
-   */
-  PassportNumber,
-  /**
-   * Regular expression for social security number by National Social Security Authority of Zimbabwe.
-   */
-  SSN,
-};
+         /**
+          * Provides regular expression for Drivers' Licences in Zimbabwe
+          */
+         DriversLicence,
+         /**
+          * Provides regular expression for email addresses
+          */
+         EmailAddress,
+         /**
+          * Regular expressions for mobile phone network operators in Zimbabwe.
+          */
+         MobileNumber,
+         /**
+          * Regular expression for National Identity Numbers in Zimbabwe
+          */
+         NationalID,
+         /**
+          * Regular expression for ordinary motor vehicle licence plate numbers in Zimbabwe.
+          */
+         NumberPlate,
+         /**
+          * Regular expression passport numbers in Zimbabwe.
+          */
+         PassportNumber,
+         /**
+          * Regular expression for social security number by National Social Security Authority of Zimbabwe.
+          */
+         SSN,
+
+         /**
+          * Regular expression for Zimbabwean domain name .
+          */
+         DomainName,
+       };

@@ -24,6 +24,16 @@ const TestVariables = {
   NonZeroTelecelNumber: '730000000',
   NonZeroEconetNumber: '770000000',
   NonZeroNetoneNumber: '710000000',
+  ValidDomains:[
+    'econet.co.zw',
+    'uz.ac.zw',
+    'zispa.org.zw',
+  ],
+  InvalidDomains:[
+    'econet.com',
+    'uz.co.za',
+    'zispa.org.za',
+  ]
 };
 
 test('Validate Econet Number', () => {
@@ -136,3 +146,15 @@ test("Can test for valid mobile numbers", () => {
 test("Can test for invalid mobile number", () => {
   expect(!MobileNumber.test(TestVariables.LongEconetNumber) && !MobileNumber.test(TestVariables.LongNetoneNumber) && !MobileNumber.test(TestVariables.LongTelecelNumber)).toBe(true);
 })
+
+test('Can test for valid domain name', () => {
+    TestVariables.ValidDomains.map((domain)=>{
+      expect(SimpleRegex.DomainName.test(domain)).toBe(true);   
+    })
+});
+
+test('Can test for invalid domain name', () => {
+  TestVariables.InvalidDomains.map(domain => {
+    expect(SimpleRegex.DomainName.test(domain)).toBe(false);
+  });
+});
