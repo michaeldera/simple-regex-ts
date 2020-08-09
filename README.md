@@ -43,3 +43,5 @@ Starting from version 2.0.0-alpha the package no longer has the global flag set 
 `SimpleRegex.DriversLicence` Pattern for Zimbabwean Driver's Licences
 
 `SimpleRegex.SSN` Pattern for Zimbabwean Social Security Number (NSSA)
+
+`SimpleRegex.DomainName` Pattern for Zimbabwean domain name
